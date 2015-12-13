@@ -44,7 +44,6 @@ if (app.get('env') === 'development') {
       error: err
     });
   });
-  app.set('port', 3000);
 }
 
 // production error handler
@@ -55,7 +54,6 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
-  app.set('port', 80);
 });
 
 
