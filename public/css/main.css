@@ -33,6 +33,7 @@
 .upcoming-event .artists .artist-label {
   color: #67DDB3;
   font-size: 12px;
+  margin-left: 12px;
 }
 .carousel-events .carousel-indicators {
   position: relative;

@@ -3,14 +3,21 @@ include ../mixins/event.jade
 section#events.container.content-section.text-center
   #carousel-events.carousel.slide.carousel-events(data-ride='carousel')
     .carousel-inner(role='listbox')
-      +eventItem(false, "images/flyer/flyer_deltafunktionen.jpg", "IWW - Functional Forward with Delta Funktionen", "", "05.12.2015", "Harry Klein, München", "https://www.facebook.com/events/1670655039846978/").active
+      +eventItem(true, "images/flyer/2016/johannes-volk-flyer.jpg", "IWW - Explorations in 2016", "", "29.01.2016", "Harry Klein, München", "https://www.facebook.com/events/1727780684122754/").active
+        +artist("JOHANNES VOLK", "Dolly, Explorations", "Gießen")
+        +artist("TRAP10 LIVE", "A.r.t.less", "Munich")
+        +artist("SEBASTIAN GALVANI", "IWW", "Munich")
+        +artist("MAXÂGE", "IWW", "Munich")
+        +artist("SEPARÉE: WALTER WOLFF", "Pappen+", "Munich")
+        
+      +eventItem(false, "images/flyer/2015/delta-funktionen-flyer_2.jpg", "IWW - Functional Forward with Delta Funktionen", "", "05.12.2015", "Harry Klein, München", "https://www.facebook.com/events/1670655039846978/")
         +artist("DELTA FUNKTIONEN", "Dirtybird, Soulfooled, IWW", "Italy")
         +artist("ANDREA DI ROCCO", "IWW, Test", "Munich")
         +artist("FABIAN KRANZ", "IWW", "Munich")
         +artist("MAXÂGE", "IWW", "Munich")
         +artist("SEPARÉE: COSMO THE CAMEL", "IWW", "Munich")
       
-      +eventItem(false, "images/flyer/50weapons_webflyer.jpg", "R.I.P 50WEAPONS", "", "24.10.2015", "MMA, München", "https://www.facebook.com/events/1670655039846978/")
+      +eventItem(false, "images/flyer/2015/50weapons_webflyer.jpg", "R.I.P 50WEAPONS", "", "24.10.2015", "MMA, München", "https://www.facebook.com/events/1670655039846978/")
         +artist("SHED", "50 Weapons, Ostgut Ton", "Berlin")
         +artist("BENJAMIN DAMAGE live", "50 Weapons", "Berlin")
         +artist("TRAP10", "A.R.T.LESS, IWW", "Munich")
