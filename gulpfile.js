@@ -16,3 +16,5 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
   gulp.watch('public/stylesheets/**/*.less', ['styles']);
 });
+
+gulp.task('build', ['styles']);
