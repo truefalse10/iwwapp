@@ -16,3 +16,15 @@ section#events.container.content-section.text-center
         +artist("TRAP10", "A.R.T.LESS, IWW", "Munich")
         +artist("MAXÂGE", "IWW", "Munich")
         +artist("SEBASTIAN GALVANI", "IWW", "Munich")
+        
+    a.left.carousel-control(href='#carousel-events', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')      
+      span.sr-only Previous       
+    a.right.carousel-control(href='#carousel-events', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')    
+      span.sr-only Next
+      
+    ol.carousel-indicators
+      li.active(data-target='#carousel-events', data-slide-to='0')
+      li(data-target='#carousel-events', data-slide-to='1')
+      li(data-target='#carousel-events', data-slide-to='2')
