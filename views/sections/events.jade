@@ -2,7 +2,7 @@ include ../mixins/event.jade
 
 section#events.container.content-section.text-center
         
-  #carousel-events.carousel.slide.carousel-events(data-ride='carousel')
+  #carousel-events.carousel.slide.carousel-events(data-ride='carousel', data-interval='false')
     .carousel-inner(role='listbox')
       each event, index in data
         +eventItem(event.isUpcoming, event.imgUrl, event.title, event.description, event.date, event.location, event.facebookLink)(class= index === 0 ? "active" : "")
