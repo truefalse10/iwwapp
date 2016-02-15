@@ -1,8 +1,10 @@
 doctype html
 html
   head
-    title iww-music.com
+    title= title
     meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/css/vendor/bootstrap.min.css')
     link(rel='stylesheet', href='/css/main.css')
     link(rel='stylesheet', href='/css/vendor/font-awesome/css/font-awesome.min.css')
@@ -17,5 +19,6 @@ html
     script(src='/javascripts/jquery.easing.min.js')
       
     // Google Analytics disabled for dev
-    //script(src='/javascripts/googleanalytics.js')
+    -if (env == 'production')
+      script(src='/javascripts/googleanalytics.js')
     
