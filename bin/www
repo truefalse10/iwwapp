@@ -12,7 +12,7 @@ var http = require('http');
  * If in production use port 80, else get port from environment or use 3000.
  */
 
-var port = ('production' == app.get('env')) ? 80 : normalizePort(process.env.PORT || '3000');
+var port = ('production' == app.get('env')) ? 3000 : normalizePort(process.env.PORT || '3000');
 
 app.set('port', port);
 

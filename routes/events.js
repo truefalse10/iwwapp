@@ -2,13 +2,49 @@ var events = {
   getAllEvents: function() {
     var result = [
       {
+        title: "IWW - Knighthood Fellas",
+        date: "11.03.2016",
+        imgUrl: "images/flyer/2016/knighthood-flyer.jpg",
+        location: "Rote Sonne, München",
+        description: "",
+        facebookLink: "https://www.facebook.com/events/584384228377009/",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "ANDREA DI ROCCO",
+            labels: "Dirtybird, Soulfooled, IWW",
+            city: "Roseto"
+          },
+          {
+            name: "James Beyond",
+            labels: "Die Registratur, Sinstruct",
+            city: "Munich"
+          },
+          {
+            name: "Marco Wachs",
+            labels: "Schirmherrschaft",
+            city: "Regensburg"
+          },
+          {
+            name: "FABIAN KRANZ",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "SEBASTIAN GALVANI",
+            labels: "IWW",
+            city: "Munich"
+          }
+        ]
+      },
+      {
         title: "8 Years IWW w/ Truncate",
         date: "20.02.2016",
         imgUrl: "images/flyer/2016/truncate-flyer.jpeg",
         location: "Harry Klein, München",
         description: "",
         facebookLink: "https://www.facebook.com/events/929675867117581/",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "TRUNCATE",
