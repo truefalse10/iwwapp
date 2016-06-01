@@ -1,4 +1,4 @@
-mixin eventItem(isUpcoming, imgUrl, title, description, date, location, facebookLink)
+mixin eventItem(isUpcoming, imgUrl, title, description, date, location, facebookLink, tickets)
   .item(class=attributes.class)
       .upcoming-event.row
           .col-md-4.col-md-offset-2
@@ -14,9 +14,16 @@ mixin eventItem(isUpcoming, imgUrl, title, description, date, location, facebook
               block
             p= description
             p #{date} @ #{location}
-            a.btn.btn-default.btn-lg(href=facebookLink, target='blank')
-              i.fa.fa-facebook.fa-fw
-              span.network-name Facebook
+            ul.event-links
+              li.event-link
+                a.btn.btn-default.btn-lg(href=facebookLink, target='blank')
+                  i.fa.fa-facebook.fa-fw
+                  span.network-name Facebook
+              li.event-link
+                if (tickets)
+                  a.btn.btn-default.btn-lg(href=tickets, target='blank')
+                    i.fa.fa-ticket.fa-fw
+                    span.network-name Buy Ticket
               
 mixin artist(name, labels, city)
   li
