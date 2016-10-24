@@ -2,13 +2,72 @@ var events = {
   getAllEvents: function() {
     var result = [
       {
+        title: "IWW - TOKEN SINE WAVES w/ Ø [Phase]",
+        date: "28.10.2016",
+        imgUrl: "images/flyer/2016/10_phase.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/340647856285463/",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "Ø [Phase]",
+            labels: "Token",
+            city: "London"
+          },
+          {
+            name: "Fabian Kranz",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "SEBASTIAN GALVANI",
+            labels: "IWW",
+            city: "Munich"
+          }
+        ]
+      },
+      {
+        title: "IWW - Super Smash w/ Fjaak analogue live!",
+        date: "06.08.2016",
+        imgUrl: "images/flyer/2016/08-fjaak.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/1022953904448578/",
+        isUpcoming: false,
+        artists: [
+          {
+            name: "Fjaak live",
+            labels: "50 Weapons",
+            city: "Berlin"
+          },
+          {
+            name: "Fabian Kranz`",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge b2b Phacid",
+            labels: "IWW, Electric Lounge",
+            city: "Munich, Kaufbeuren"
+          },
+          {
+            name: "SEBASTIAN GALVANI",
+            labels: "IWW",
+            city: "Munich"
+          }
+        ]
+      },
+      {
         title: "IWW inner motions w/ sven weisemann & trap10",
         date: "03.06.2016",
         imgUrl: "images/flyer/2016/06-svenweismann.jpg",
         location: "Harry Klein, Munich",
-        description: 'All guests who fill out <a href="http://goo.gl/forms/mf0gj9mqUBEsNCtj1" target="_blank">this form</a> will get a discount on the entry fee',
         facebookLink: "https://www.facebook.com/events/241385579557518/",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "SVEN WEISEMANN",

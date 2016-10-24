@@ -24,6 +24,13 @@
 }
 
 .upcoming-event {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    @media (min-width: @screen-md-min) {
+      flex-flow: row;
+    }
     .flyer {
         width: 100%;
 
