@@ -2,12 +2,42 @@ var events = {
   getAllEvents: function() {
     var result = [
       {
+        title: "IWW pres. Octave One live",
+        date: "03.12.2016",
+        imgUrl: "images/flyer/2016/12_octaveone.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/861918230610842/",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "Octave One live",
+            labels: "430 West",
+            city: "Detroit"
+          },
+          {
+            name: "Fabian Kranz",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "SEBASTIAN GALVANI",
+            labels: "IWW",
+            city: "Munich"
+          }
+        ]
+      },
+      {
         title: "IWW - TOKEN SINE WAVES w/ Ø [Phase]",
         date: "28.10.2016",
         imgUrl: "images/flyer/2016/10_phase.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/340647856285463/",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "Ø [Phase]",
