@@ -2,12 +2,52 @@ var events = {
   getAllEvents: function() {
     var result = [
       {
+        title: "9 Years IWW",
+        date: "04.02.2017",
+        imgUrl: "images/flyer/2017/02_iww_9_years.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/629606527164398/",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "Martyn",
+            labels: "Ostgut Ton",
+            city: "Washingtion DC"
+          },
+          {
+            name: "Andrea di Rocco",
+            labels: "Dirtybird, D-Floor",
+            city: "Roseto"
+          },
+          {
+            name: "Michal Zietara b2b Maxâge",
+            labels: "Wilde Renate, Pets, IWW",
+            city: "Berlin, Munich"
+          },
+          {
+            name: "Fabian Kranz",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "SEBASTIAN GALVANI",
+            labels: "IWW",
+            city: "Munich"
+          }
+        ]
+      },
+      {
         title: "IWW pres. Octave One live",
         date: "03.12.2016",
         imgUrl: "images/flyer/2016/12_octaveone.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/861918230610842/",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "Octave One live",
