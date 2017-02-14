@@ -1,14 +1,30 @@
-include ../mixins/event.jade
 
-section#events.container.content-section.text-center
-        
+section#events.container.content-section.text-center      
   #carousel-events.carousel.slide.carousel-events(data-ride='carousel', data-interval='false')
     .carousel-inner(role='listbox')
-      each event, index in data
-        +eventItem(event.isUpcoming, event.imgUrl, event.title, event.description, event.date, event.location, event.facebookLink, event.tickets)(class= index === 0 ? "active" : "")
-          each artist in event.artists
-            +artist(artist.name, artist.labels, artist.city)
-        
+      .item(v-for="event in events", :class="events.indexOf(event) === 0 ? 'active': ''")
+        .upcoming-event.row
+          .col-md-4.col-md-offset-2
+            img.flyer(:src="event.imgUrl", :alt="event.title")
+          .col-md-6
+            h4.tag-upcoming(v-if="event.isUpcoming") upcoming Event:
+            h4.tag-past(v-else) past Event:
+            h2 {{event.title }}              
+            ul.artists
+              li(v-for="artist in event.artists")
+                span.artist-name {{artist.name}}
+                span.artist-label [ {{artist.labels}} | {{artist.city}} ]
+            p {{event.description }}
+            p {{event.date }} @ {{event.location }}
+            ul.event-links
+              li.event-link
+                a.btn.btn-default.btn-lg(:href="event.facebookLink", target='blank')
+                  i.fa.fa-facebook.fa-fw
+                  span.network-name Facebook
+              li.event-link
+                a.btn.btn-default.btn-lg(v-if="event.tickets", :href="event.tickets", target='blank')
+                  i.fa.fa-ticket.fa-fw
+                  span.network-name Buy Ticket      
     a.left.carousel-control(href='#carousel-events', role='button', data-slide='prev')
       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')      
       span.sr-only Previous       
@@ -17,5 +33,4 @@ section#events.container.content-section.text-center
       span.sr-only Next
       
     ol.carousel-indicators
-      each event, index in data
-        li(class= event.isUpcoming ? 'active' : '', data-target='#carousel-events', data-slide-to=index)
+      li(v-for="event in events", :class="event.isUpcoming ? 'active' : ''", data-target='#carousel-events', :data-slide-to="events.indexOf[event]")

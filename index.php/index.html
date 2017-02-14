@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,200,700">
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav role="navigation" class="navbar navbar-custom navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle"><i class="fa fa-bars"></i></button><a href="#page-top" class="navbar-brand page-scroll"><span class="logo-iww-64 small"></span>IWW-MUSIC.COM</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling-->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section-->
+            <li class="hidden"><a href="#page-top"></a></li>
+            <li><a href="#intro" class="page-scroll">Home</a></li>
+            <li><a href="#events" class="page-scroll">Events</a></li>
+            <li><a href="#about" class="page-scroll">About               </a></li>
+            <li><a href="#booking" class="page-scroll">Booking</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header id="intro" class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-2"><span class="logo-iww-128">  </span></div>
+                <div class="col-md-8">
+                  <h1 class="brand-heading">IWW MUSIC</h1>
+                </div>
+              </div>
+              <p class="intro-text">Music | Events | Label</p>
+              <ul class="list-inline banner-social-buttons">
+                <li><a href="https://www.facebook.com/iww.official" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a></li>
+                <li><a href="http://www.residentadvisor.net/promoter.aspx?id=9491" target="_blank" class="btn btn-default btn-lg"><span class="network-name">Resident Advisor</span></a></li>
+                <li><a href="https://soundcloud.com/iww" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-soundcloud fa-fw"></i><span class="network-name">Soundcloud</span></a></li>
+              </ul><a href="#events" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="events" class="container content-section text-center">     
+      <div id="carousel-events" data-ride="carousel" data-interval="false" class="carousel slide carousel-events">
+        <div role="listbox" class="carousel-inner">
+          <div v-for="event in events" :class="events.indexOf(event) === 0 ? 'active': ''" class="item">
+            <div class="upcoming-event row">
+              <div class="col-md-4 col-md-offset-2"><img :src="event.imgUrl" :alt="event.title" class="flyer"></div>
+              <div class="col-md-6">
+                <h4 v-if="event.isUpcoming" class="tag-upcoming">upcoming Event:</h4>
+                <h4 v-else class="tag-past">past Event:</h4>
+                <h2>{{event.title }}              </h2>
+                <ul class="artists">
+                  <li v-for="artist in event.artists"><span class="artist-name">{{artist.name}}</span><span class="artist-label">[ {{artist.labels}} | {{artist.city}} ]</span></li>
+                </ul>
+                <p>{{event.description }}</p>
+                <p>{{event.date }} @ {{event.location }}</p>
+                <ul class="event-links">
+                  <li class="event-link"><a :href="event.facebookLink" target="blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a></li>
+                  <li class="event-link"><a v-if="event.tickets" :href="event.tickets" target="blank" class="btn btn-default btn-lg"><i class="fa fa-ticket fa-fw"></i><span class="network-name">Buy Ticket      </span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><a href="#carousel-events" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left">     </span><span class="sr-only">Previous       </span></a><a href="#carousel-events" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right">   </span><span class="sr-only">Next</span></a>
+        <ol class="carousel-indicators">
+          <li v-for="event in events" :class="event.isUpcoming ? 'active' : ''" data-target="#carousel-events" :data-slide-to="events.indexOf[event]"></li>
+        </ol>
+      </div>
+    </section>
+    <section id="about" class="content-section text-center">
+      <div class="about-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>About IWW     </h2><img src="/public/images/iww_crew.jpg" alt="IWW Crew" class="about-img">
+            <p>Since 2008 IWW brings to Munich the most talented and innovative artists of the electronic music scene.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="booking" class="container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Booking</h2>
+          <p>For booking enquiries, please contact <a href="mailto:booking@iww-music.com">booking@iww-music.com</a></p>
+          <div class="social-bottom">
+            <ul class="list-inline banner-social-buttons">
+              <li><a href="https://www.facebook.com/iww.official" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a></li>
+              <li><a href="http://www.residentadvisor.net/record-label.aspx?id=6077" target="_blank" class="btn btn-default btn-lg"><span class="network-name">Resident Advisor</span></a></li>
+              <li><a href="https://soundcloud.com/iww" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-soundcloud fa-fw"></i><span class="network-name">Soundcloud</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="/public/javascripts/vue.js"></script>
+    <script src="/public/javascripts/vendor/jquery-1.11.2.min.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap.min.js"></script>
+    <script src="/public/javascripts/grayscale.js"></script>
+    <script src="/public/javascripts/jquery.easing.min.js"></script>
+    <script src="/public/javascripts/main.js"></script>
+    <script src="/public/javascripts/googleanalytics.js"></script>
+  </body>
+</html>
