@@ -383,8 +383,6 @@ var events = [
         ]
       }
 ];
-
-console.log("this is vue");
 var app = new Vue({
   el: '#events',
   data: {
