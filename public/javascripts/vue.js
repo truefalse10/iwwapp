@@ -1,11 +1,41 @@
 var events = [
       {
+        title: "IWW - Chicago House Unit w/Boo Williams",
+        date: "18.03.2017",
+        imgUrl: "/public/images/flyer/2017/03_boowilliams.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/1435604709792826/",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "Boo Williams",
+            labels: "Strictly Jaz Unit",
+            city: "Chicago"
+          },
+          {
+            name: "Fabian Kranz",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Separee: Moritz Beldig",
+            labels: "Awi",
+            city: "Munich"
+          }
+        ]
+      },
+      {
         title: "9 Years IWW",
         date: "04.02.2017",
         imgUrl: "/public/images/flyer/2017/02_iww_9_years.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/629606527164398/",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "Martyn",
