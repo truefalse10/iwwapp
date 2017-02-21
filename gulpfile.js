@@ -4,6 +4,9 @@ var gutil = require('gutil');
 var jade = require('gulp-jade');
 var clean = require('gulp-clean');
 var autoprefixer = require('gulp-autoprefixer');
+const ftp = require('vinyl-ftp');
+
+const config = require('./config');
 
 gulp.task('default', ['styles', 'watch']);
 
@@ -24,6 +27,13 @@ gulp.task('copy', ['clean'], () =>
     .pipe(gulp.dest('./dist/public')));
 
 gulp.task('clean', () => gulp.src('./dist', {read: false}).pipe(clean()));
+
+gulp.task('ftp', () => {
+  const conn = ftp.create(Object.assign(config, { log: gutil.log }));
+  return gulp.src('./dist/**/*', { base: './dist', buffer: false })
+    .pipe(conn.newer('/php'))
+    .pipe(conn.dest('/php'))
+});
 
 gulp.task('build', ['styles', 'copy'], () =>    gulp.src('./views/index.jade').pipe(jade({
   pretty: true
