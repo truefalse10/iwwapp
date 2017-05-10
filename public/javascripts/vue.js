@@ -1,11 +1,46 @@
 var events = [
       {
+        title: "IWW - Bang Boom Bang w/Mark Henning",
+        date: "13.05.2017",
+        imgUrl: "/public/images/flyer/2017/05_mark_henning.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/257580661370307/",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "Mark Henning",
+            labels: "Soma Records",
+            city: "UK"
+          },
+          {
+            name: "Trap10",
+            labels: "A.r.t.less",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Cassius Kline",
+            labels: "Sensor",
+            city: "Munich"
+          },
+          {
+            name: "Separee: Marco Wachs & Jan K",
+            labels: "Schirmherrschaft",
+            city: "Regensburg"
+          }
+        ]
+      },
+      {
         title: "IWW - Chicago House Unit w/Boo Williams",
         date: "18.03.2017",
         imgUrl: "/public/images/flyer/2017/03_boowilliams.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/1435604709792826/",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "Boo Williams",
