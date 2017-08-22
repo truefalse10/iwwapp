@@ -5,7 +5,7 @@ var events = [
         imgUrl: "/public/images/flyer/2017/08_fjaak.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/138930286693659",
-	isUpcoming: false,
+        isUpcoming: true,
         artists: [
           {
             name: "Fjaak",
@@ -49,7 +49,7 @@ var events = [
           },
           {
             name: "Fabian Kranz",
-            labels: "IWW, Trap10",,
+            labels: "IWW, Trap10",
             city: "Munich"
           },
         ]
@@ -60,7 +60,7 @@ var events = [
         imgUrl: "/public/images/flyer/2017/05_mark_henning.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/257580661370307/",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "Mark Henning",
