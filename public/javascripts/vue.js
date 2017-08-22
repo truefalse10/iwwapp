@@ -1,5 +1,60 @@
 var events = [
       {
+        title: "IWW - Analogue Live Experience w/ Fjaak",
+        date: "26.08.2017",
+        imgUrl: "/public/images/flyer/2017/08_fjaak.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/138930286693659",
+	isUpcoming: false,
+        artists: [
+          {
+            name: "Fjaak",
+            labels: "Mokeytown, 50 Weapons",
+            city: "Berlin"
+          },
+          {
+            name: "Fabian Kranz",
+            labels: "IWW, Trap10",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Separee: Moritz Beldig",
+            labels: "Awi",
+            city: "Munich"
+          }
+        ]
+      },
+      {
+        title: "IWW - Substance of Detroit w/ Patrice Scott",
+        date: "28.07.2017",
+        imgUrl: "/public/images/flyer/2017/07_patrice_scott.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/444989889211051/",
+        isUpcoming: false,
+        artists: [
+          {
+            name: "Patrice Scott",
+            labels: "Sistrum",
+            city: "Detroit"
+          },
+          {
+            name: "Marco Wachs",
+            labels: "Schrimherrschaft",
+            city: "Regensburg"
+          },
+          {
+            name: "Fabian Kranz",
+            labels: "IWW, Trap10",,
+            city: "Munich"
+          },
+        ]
+      },
+      {
         title: "IWW - Bang Boom Bang w/Mark Henning",
         date: "13.05.2017",
         imgUrl: "/public/images/flyer/2017/05_mark_henning.jpg",
