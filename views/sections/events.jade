@@ -7,7 +7,7 @@ section#events.container.content-section.text-center
           .col-md-4.col-md-offset-2
             img.flyer(:src="event.imgUrl", :alt="event.title")
           .col-md-6
-            h4.tag-upcoming(v-if="event.isUpcoming") upcoming Event:
+            h4.tag-upcoming(v-if="new Date() <= new Date(event.date)") upcoming Event:
             h4.tag-past(v-else) past Event:
             h2 {{event.title }}              
             ul.artists
@@ -33,4 +33,4 @@ section#events.container.content-section.text-center
       span.sr-only Next
       
     ol.carousel-indicators
-      li(v-for="event in events", :class="event.isUpcoming ? 'active' : ''", data-target='#carousel-events', :data-slide-to="events.indexOf[event]")
+      li(v-for="event in events", data-target='#carousel-events', :data-slide-to="events.indexOf[event]")

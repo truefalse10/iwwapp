@@ -1,12 +1,11 @@
-var events = [
+var events = [ // date must be us format (MM/DD/YYYY)
       {
         title: "Mount Kimbie - Love What Survives Album Tour",
-        date: "16.11.2017",
+        date: "11.16.2017", // date must be MM/DD/YYYY
         imgUrl: "/public/images/flyer/2017/11_mk.jpg",
         location: "Muffathalle, Munich",
         facebookLink: "https://www.facebook.com/events/300909780348829",
         tickets: "http://www.eventim.de/mount-kimbie-muenchen-Tickets.html?affiliate=EVE&doc=artistPages%2Ftickets&fun=artist&action=tickets&key=1767404%249708883&jumpIn=yTix&kuid=457463&from=erdetaila",
-        isUpcoming: true,
         artists: [
           {
             name: "Mount Kimbie live",
@@ -17,11 +16,10 @@ var events = [
       },
       {
         title: "IWW - The Cab Drivers Cabinet",
-        date: "04.11.2017",
+        date: "11.04.2017",
         imgUrl: "/public/images/flyer/2017/11_cab_drivers.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/447032915691823",
-        isUpcoming: true,
         artists: [
           {
             name: "Cab Drivers live",
@@ -47,11 +45,10 @@ var events = [
       },
       {
         title: "IWW - Analogue Live Experience w/ Fjaak",
-        date: "26.08.2017",
+        date: "08.26.2017",
         imgUrl: "/public/images/flyer/2017/08_fjaak.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/138930286693659",
-        isUpcoming: false,
         artists: [
           {
             name: "Fjaak",
@@ -81,7 +78,6 @@ var events = [
         imgUrl: "/public/images/flyer/2017/07_patrice_scott.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/444989889211051/",
-        isUpcoming: false,
         artists: [
           {
             name: "Patrice Scott",
@@ -106,7 +102,6 @@ var events = [
         imgUrl: "/public/images/flyer/2017/05_mark_henning.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/257580661370307/",
-        isUpcoming: false,
         artists: [
           {
             name: "Mark Henning",
@@ -141,7 +136,6 @@ var events = [
         imgUrl: "/public/images/flyer/2017/03_boowilliams.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/1435604709792826/",
-        isUpcoming: false,
         artists: [
           {
             name: "Boo Williams",
@@ -171,7 +165,6 @@ var events = [
         imgUrl: "/public/images/flyer/2017/02_iww_9_years.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/629606527164398/",
-        isUpcoming: false,
         artists: [
           {
             name: "Martyn",
@@ -211,7 +204,6 @@ var events = [
         imgUrl: "/public/images/flyer/2016/12_octaveone.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/861918230610842/",
-        isUpcoming: false,
         artists: [
           {
             name: "Octave One live",
@@ -241,7 +233,6 @@ var events = [
         imgUrl: "/public/images/flyer/2016/10_phase.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/340647856285463/",
-        isUpcoming: false,
         artists: [
           {
             name: "Ø [Phase]",
@@ -271,7 +262,6 @@ var events = [
         imgUrl: "/public/images/flyer/2016/08-fjaak.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/1022953904448578/",
-        isUpcoming: false,
         artists: [
           {
             name: "Fjaak live",
@@ -301,7 +291,6 @@ var events = [
         imgUrl: "/public/images/flyer/2016/06-svenweismann.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/241385579557518/",
-        isUpcoming: false,
         artists: [
           {
             name: "SVEN WEISEMANN",
@@ -332,7 +321,6 @@ var events = [
         location: "Rote Sonne, Munich",
         description: "",
         facebookLink: "https://www.facebook.com/events/987036918043492/",
-        isUpcoming: false,
         tickets: "https://shop3.ticketscript.com/channel/html/get-products/rid/TL5RBWTV/eid/299946/date/2016-04-23/tsid/209594/sid/0",
         artists: [
           {
@@ -364,7 +352,6 @@ var events = [
         location: "Harry Klein, Munich",
         description: "",
         facebookLink: "https://www.facebook.com/events/1027705967267871/",
-        isUpcoming: false,
         artists: [
           {
             name: "Dasha Rush",
@@ -390,7 +377,6 @@ var events = [
         location: "Rote Sonne, Munich",
         description: "",
         facebookLink: "https://www.facebook.com/events/584384228377009/",
-        isUpcoming: false,
         artists: [
           {
             name: "ANDREA DI ROCCO",
@@ -426,7 +412,6 @@ var events = [
         location: "Harry Klein, Munich",
         description: "",
         facebookLink: "https://www.facebook.com/events/929675867117581/",
-        isUpcoming: false,
         artists: [
           {
             name: "TRUNCATE",
@@ -457,7 +442,6 @@ var events = [
         location: "Harry Klein, Munich",
         description: "",
         facebookLink: "https://www.facebook.com/events/1727780684122754/",
-        isUpcoming: false,
         artists: [
           {
             name: "Johannes Volk",
@@ -488,7 +472,6 @@ var events = [
         location: "Harry Klein, Munich",
         description: "",
         facebookLink: "https://www.facebook.com/events/1670655039846978/",
-        isUpcoming: false,
         artists: [
           {
             name: "DELTA FUNKTIONEN",
@@ -524,7 +507,6 @@ var events = [
         location: "MMA, Munich",
         description: "",
         facebookLink: "https://www.facebook.com/events/416273221903850/",
-        isUpcoming: false,
         artists: [
           {
             name: "SHED",
