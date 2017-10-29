@@ -1,11 +1,57 @@
 var events = [
       {
+        title: "Mount Kimbie - Love What Survives Album Tour",
+        date: "16.11.2017",
+        imgUrl: "/public/images/flyer/2017/11_mk.jpg",
+        location: "Muffathalle, Munich",
+        facebookLink: "https://www.facebook.com/events/300909780348829",
+        tickets: "http://www.eventim.de/mount-kimbie-muenchen-Tickets.html?affiliate=EVE&doc=artistPages%2Ftickets&fun=artist&action=tickets&key=1767404%249708883&jumpIn=yTix&kuid=457463&from=erdetaila",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "Mount Kimbie live",
+            labels: "Warp Records",
+            city: "UK"
+          },
+        ]
+      },
+      {
+        title: "IWW - The Cab Drivers Cabinet",
+        date: "04.11.2017",
+        imgUrl: "/public/images/flyer/2017/11_cab_drivers.jpg",
+        location: "Harry Klein, Munich",
+        facebookLink: "https://www.facebook.com/events/447032915691823",
+        isUpcoming: true,
+        artists: [
+          {
+            name: "Cab Drivers live",
+            labels: "Cabinet",
+            city: "Berlin"
+          },
+          {
+            name: "Fabian Kranz",
+            labels: "IWW, Trap10",
+            city: "Munich"
+          },
+          {
+            name: "Maxâge",
+            labels: "IWW",
+            city: "Munich"
+          },
+          {
+            name: "Separee: Julian Winstel",
+            labels: "Downstairs",
+            city: "Munich"
+          }
+        ]
+      },
+      {
         title: "IWW - Analogue Live Experience w/ Fjaak",
         date: "26.08.2017",
         imgUrl: "/public/images/flyer/2017/08_fjaak.jpg",
         location: "Harry Klein, Munich",
         facebookLink: "https://www.facebook.com/events/138930286693659",
-        isUpcoming: true,
+        isUpcoming: false,
         artists: [
           {
             name: "Fjaak",
