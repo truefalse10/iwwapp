@@ -1,6 +1,57 @@
 var events = [
   // date must be us format (MM/DD/YYYY)
   {
+    title: '10 Years IWW Weekender',
+    date: '03.01.2018', // date must be MM/DD/YYYY
+    imgUrl: '/public/images/flyer/2018/10_years_iww.jpg',
+    location: 'Harry Klein, Munich',
+    facebookLink: 'https://www.facebook.com/events/1769683290005663/',
+    tickets:
+      'https://www.eventbrite.de/e/10-years-iww-w-apparat-and-many-more-tickets-41335562781',
+    artists: [
+      {
+        name: 'Apparat',
+        labels: 'Mute',
+        city: 'Berlin',
+      },
+      {
+        name: 'Trap10',
+        labels: 'Mute',
+        city: 'Berlin',
+      },
+      {
+        name: 'Fabian Kranz, Maxâge, Sebastian Galvani',
+        labels: 'IWW',
+        city: 'Munich',
+      },
+      {
+        name: 'Marco Wachs',
+        labels: 'IWW',
+        city: 'Munich',
+      },
+      {
+        name: 'Andrea Di Rocco',
+        labels: 'Dirtybird, IWW',
+        city: 'Berlin',
+      },
+      {
+        name: 'Michal Zietara',
+        labels: 'Pets',
+        city: 'Berlin',
+      },
+      {
+        name: 'James Beyond',
+        labels: 'Registratur',
+        city: 'Munich',
+      },
+      {
+        name: 'Tuff Rubber',
+        labels: 'Tuff Rubber',
+        city: 'Munich',
+      },
+    ],
+  },
+  {
     title: 'IWW - Jaguar Nights',
     date: '01.12.2017',
     imgUrl: '/public/images/flyer/2017/12_rolando.jpg',
