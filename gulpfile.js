@@ -23,7 +23,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('copy', ['clean'], () =>
-  gulp.src('./public/**/*')
+  gulp.src(['./public/**/*', '!./public/**/*.zip'])
     .pipe(gulp.dest('./dist/public')));
 
 gulp.task('clean', () => gulp.src('./dist', {read: false}).pipe(clean()));
