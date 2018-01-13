@@ -1,98 +1,148 @@
-@import "variables";
-@import "grayscale";
-@import "mixins";
+@import 'variables';
+@import 'grayscale';
+@import 'mixins';
 
 .logo-iww-64 {
-    display: inline-block;
-    background: url(../images/logos/iww_logo_64w.png) no-repeat;
-    background-size: contain;
-    width: 64px;
-    height: 64px;
+  display: inline-block;
+  background: url(../images/logos/iww_logo_64w.png) no-repeat;
+  background-size: contain;
+  width: 64px;
+  height: 64px;
 
-    &.small {
-        width: 13px;
-        height: 13px;
-        margin-right: 5px;
-    }
+  &.small {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+  }
 }
 .logo-iww-128 {
-    display: inline-block;
-    background: url(../images/logos/iww_logo_128w.png) no-repeat;
-    background-size: contain;
-    width: 128px;
-    height: 128px;
+  display: inline-block;
+  background: url(../images/logos/iww_logo_128w.png) no-repeat;
+  background-size: contain;
+  width: 128px;
+  height: 128px;
 }
 
 .upcoming-event {
-    display: flex;
-    align-items: center;
-    flex-flow: column;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
 
-    @media (min-width: @screen-md-min) {
-      flex-flow: row;
+  @media (min-width: @screen-md-min) {
+    flex-flow: row;
+  }
+  .flyer {
+    width: 100%;
+
+    @media (max-width: @screen-md-min) {
+      width: 60%;
+      margin-bottom: 30px;
     }
-    .flyer {
-        width: 100%;
+  }
 
-        @media (max-width: @screen-md-min) {
-            width: 60%;
-            margin-bottom: 30px;
-        }
+  .artists {
+    list-style: none;
+    font-size: @font-size-regular;
+    text-transform: uppercase;
 
-
+    .artist-label {
+      color: @primary;
+      font-size: @font-size-small;
+      margin-left: 12px;
     }
-
-    .artists {
-        list-style: none;
-        font-size: @font-size-regular;
-        text-transform: uppercase;
-
-        .artist-label {
-            color: @primary;
-            font-size: @font-size-small;
-            margin-left: 12px;
-
-        }
-    }
-
+  }
 }
 
 .carousel-events {
-    .carousel-indicators {
-        position: relative;
-        bottom: inherit;
-        margin-top: 20px;
-    }
+  .carousel-indicators {
+    position: relative;
+    bottom: inherit;
+    margin-top: 20px;
+  }
 
-    .tag-upcoming, .tag-past {
-        background: @primary;
-        color: black;
-        border-radius: 2px;
-        text-align: center;
-        width: 210px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 15px;
-    }
-    .tag-past {
-        width: 145px;
-    }
+  .tag-upcoming,
+  .tag-past {
+    background: @primary;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .tag-past {
+    width: 145px;
+  }
 }
 
 .social-bottom {
-    margin: 80px 0;
+  margin: 80px 0;
 }
 
 .about-section {
-    .about-img {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+  .about-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 .event-links {
   list-style: none;
   > li {
     display: inline;
     margin: 0 5px;
+  }
+}
+.records {
+  h1 {
+    margin-bottom: 80px;
+  }
+  .grid {
+    @media (min-width: @screen-sd-min) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+    }
+    @media (min-width: @screen-md-min) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .record {
+      &:first-child {
+        grid-column-end: span 2;
+        @media (min-width: @screen-md-min) {
+          grid-column-end: span 3;
+        }
+      }
+      .record-id {
+        color: @primary;
+      }
+      .iframe {
+        margin-bottom: 80px;
+      }
+      .title {
+        @media (min-width: @screen-md-min) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        min-height: 64px;
+        margin-bottom: 20px;
+        a {
+          display: block;
+        }
+        .logo-soundcloud {
+          height: 32px;
+          margin-top: 10px;
+          @media (min-width: @screen-md-min) {
+            margin-top: 0;
+            margin-left: 15px;
+          }
+        }
+      }
+      .cover {
+        width: 280px;
+        margin-bottom: 80px;
+      }
+    }
   }
 }

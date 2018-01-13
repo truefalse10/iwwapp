@@ -19,7 +19,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('public/stylesheets/**/*.less', ['styles']);
+  gulp.watch(['views/**/*.jade','public/**/*.js','public/**/*.less'], ['build']);
 });
 
 gulp.task('copy', ['clean'], () =>
