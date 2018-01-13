@@ -98,18 +98,18 @@
     margin-bottom: 80px;
   }
   .grid {
-    @media (min-width: @screen-sd-min) {
+    @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 20px;
     }
-    @media (min-width: @screen-md-min) {
+    @media (min-width: @screen-lg-min) {
       grid-template-columns: 1fr 1fr 1fr;
     }
     .record {
       &:first-child {
         grid-column-end: span 2;
-        @media (min-width: @screen-md-min) {
+        @media (min-width: @screen-lg-min) {
           grid-column-end: span 3;
         }
       }
