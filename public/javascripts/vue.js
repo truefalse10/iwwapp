@@ -1,6 +1,30 @@
 var events = [
   // date must be us format (MM/DD/YYYY)
   {
+    title: 'IWW Meets Marry Klein',
+    date: '27.04.2018', // date must be MM/DD/YYYY
+    imgUrl: '/public/images/flyer/2018/04_alienata.jpg',
+    location: 'Harry Klein, Munich',
+    facebookLink: 'https://www.facebook.com/events/160969641256124/',
+    artists: [
+      {
+        name: 'Alienata',
+        labels: 'Killekil',
+        city: 'Valencia',
+      },
+      {
+        name: 'CLARA CUVÉ',
+        labels: '',
+        city: 'Berlin',
+      },
+      {
+        name: 'Marcella',
+        labels: 'Suxul',
+        city: 'Ingolstadt',
+      },
+    ],
+  },
+  {
     title: '10 Years IWW Weekender',
     date: '02.02.2018', // date must be MM/DD/YYYY
     imgUrl: '/public/images/flyer/2018/10_years_iww.jpg',
